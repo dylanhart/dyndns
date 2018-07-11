@@ -1,0 +1,13 @@
+[package]
+name = "dyndns"
+version = "0.1.0"
+authors = ["dylanhart <dylan96hart@gmail.com>"]
+
+[lib]
+name = "dyndns"
+path = "src/lib.rs"
+
+[dependencies]
+digitalocean = { git = "https://github.com/dylanhart/fork-digitalocean", branch = "update-reqwest" }
+reqwest = "0.8.6"
+igd = "0.7"
